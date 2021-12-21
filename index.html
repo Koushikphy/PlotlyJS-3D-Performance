@@ -24,8 +24,8 @@
 <body>
     <div id="header">
         <label id="version"></label>
-        <button onclick="changeScript(0)">v1.41.1</button>
-        <button onclick="changeScript(1)">v2.8.1</button>
+        <button onclick="changeScript(0)">v1.44.4</button>
+        <button onclick="changeScript(1)">v1.45.0</button>
     </div>
     <div id="root"></div>
     <script>
@@ -32981,7 +32981,7 @@
             var script = document.createElement('script');
             script.type = 'text/javascript';
             head.appendChild(script);
-            script.src = option == 0 ? "https://cdn.plot.ly/plotly-1.41.1.min.js" : "https://cdn.plot.ly/plotly-2.8.1.min.js";
+            script.src = option == 0 ? "https://cdn.plot.ly/plotly-1.44.4.min.js" : "https://cdn.plot.ly/plotly-1.45.0.min.js";
             script.onload = function () {
                 document.getElementById('version').innerHTML = `Using Plotly version <b>  ${Plotly.version}</b>`
                 Plotly.newPlot(root, [
